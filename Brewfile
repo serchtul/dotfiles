@@ -10,18 +10,20 @@ cask "blender"
 cask "thunderbird"
 
 brew "git"
+brew "git-lfs"
 brew "coreutils"
 brew "mise"
 brew "jq"
 brew "ripgrep"
-brew "nmap"
-brew "git-lfs"
 brew "tfenv"
+brew "nmap"
 
+brew "neovim"
 brew "fnm"
 brew "node"
 brew "pnpm"
-brew "neovim"
+
+brew "mongosh"
 brew "ollama"
 
 brew "octave"
