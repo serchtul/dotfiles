@@ -1,0 +1,72 @@
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/sgarcia/.oh-my-zsh"
+
+# Basically ZSH_THEME="spaceship" but using Homebrew
+source $HOMEBREW_PREFIX/opt/spaceship/spaceship.zsh
+
+SPACESHIP_PROMPT_ORDER=(
+  time          # Time stamps section
+  user          # Username section
+  dir           # Current directory section
+  git           # Git section (git_branch + git_status)
+  package       # Package version
+  node          # Node.js section
+  elixir        # Elixir section
+  php           # PHP section
+  rust          # Rust section
+  docker        # Docker section
+  aws           # Amazon Web Services section
+  gcloud        # Google Cloud Platform section
+  venv          # virtualenv section
+  kubectl       # Kubectl context section
+  terraform     # Terraform workspace section
+  exec_time     # Execution time
+  line_sep      # Line break
+  battery       # Battery level and status
+  jobs          # Background jobs indicator
+  exit_code     # Exit code section
+  char          # Prompt character
+)
+
+# Which plugins would you like to load?
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# Neovim btw
+alias vim=nvim
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
+
+# Prioritizes Homebrew's git over Apple's
+export PATH=/opt/homebrew/bin/git:$PATH
+
+# fnm
+export PATH="/Users/sgarcia/Library/Application Support/fnm:$PATH"
+eval "`fnm env`"
+
+# tfenv
+export PATH="$HOME/.tfenv/bin:$PATH"
+
+# mise-en-place
+eval "$(mise activate zsh)"
+
+# Added by Windsurf
+export PATH="/Users/sgarcia/.codeium/windsurf/bin:$PATH"
+
+# gcloud SDK
+if [ -f '/Users/sgarcia/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/sgarcia/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/sgarcia/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/sgarcia/google-cloud-sdk/completion.zsh.inc'; fi
+
+#
+# Aliases
+#
+
+# Make git operations on dotfiles' bare repo easier
+alias dotf='git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+
