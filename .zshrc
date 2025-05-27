@@ -16,7 +16,6 @@ SPACESHIP_PROMPT_ORDER=(
   rust          # Rust section
   docker        # Docker section
   aws           # Amazon Web Services section
-  gcloud        # Google Cloud Platform section
   venv          # virtualenv section
   kubectl       # Kubectl context section
   terraform     # Terraform workspace section
