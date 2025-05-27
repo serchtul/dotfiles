@@ -9,6 +9,7 @@ cask "bruno"
 
 cask "blender"
 cask "thunderbird"
+cask "anki"
 
 brew "spaceship"
 brew "git"
@@ -17,6 +18,8 @@ brew "coreutils"
 brew "mise"
 brew "jq"
 brew "ripgrep"
+brew "fd"
+
 brew "tfenv"
 brew "nmap"
 
@@ -30,6 +33,7 @@ brew "mongosh"
 brew "ollama"
 
 brew "octave"
+brew "stockfish"
 
 brew "tursodatabase/tap/turso"
 brew "wpscanteam/tap/wpscan"
