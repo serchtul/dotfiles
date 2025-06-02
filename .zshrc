@@ -66,6 +66,14 @@ if [ -f '/Users/sgarcia/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/s
 # Aliases
 #
 
-# Make git operations on dotfiles' bare repo easier
-alias dotf='git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+# These make git operations on dotfiles' bare repo easier
+function dotfiles() {
+  export GIT_DIR="$HOME/dotfiles/"
+  export GIT_WORK_TREE=$HOME
+}
+
+function undotfiles() {
+  unset GIT_DIR
+  unset GIT_WORK_TREE
+}
 
