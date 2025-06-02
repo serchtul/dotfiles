@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/sgarcia/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Basically ZSH_THEME="spaceship" but using Homebrew
 source $HOMEBREW_PREFIX/opt/spaceship/spaceship.zsh
@@ -46,7 +46,7 @@ fi
 export PATH=/opt/homebrew/bin/git:$PATH
 
 # fnm
-export PATH="/Users/sgarcia/Library/Application Support/fnm:$PATH"
+export PATH="$HOME/Library/Application Support/fnm:$PATH"
 eval "`fnm env`"
 
 # tfenv
@@ -56,11 +56,11 @@ export PATH="$HOME/.tfenv/bin:$PATH"
 eval "$(mise activate zsh)"
 
 # Added by Windsurf
-export PATH="/Users/sgarcia/.codeium/windsurf/bin:$PATH"
+export PATH="$HOME/.codeium/windsurf/bin:$PATH"
 
 # gcloud SDK
-if [ -f '/Users/sgarcia/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/sgarcia/google-cloud-sdk/path.zsh.inc'; fi
-if [ -f '/Users/sgarcia/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/sgarcia/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi
+if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
 
 #
 # Aliases
