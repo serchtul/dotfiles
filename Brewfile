@@ -6,6 +6,7 @@ tap "oven-sh/bun"
 cask "ghostty"
 cask "dbeaver-community"
 cask "bruno"
+cask "docker"
 
 cask "blender"
 cask "thunderbird"
