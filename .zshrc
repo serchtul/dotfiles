@@ -42,9 +42,6 @@ else
   export EDITOR='nvim'
 fi
 
-# Prioritizes Homebrew's git over Apple's
-export PATH=/opt/homebrew/bin/git:$PATH
-
 # fnm
 export PATH="$HOME/Library/Application Support/fnm:$PATH"
 eval "`fnm env`"
