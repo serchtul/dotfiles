@@ -12,6 +12,7 @@ cask "cursor"
 cask "blender"
 cask "thunderbird"
 cask "anki"
+cask "activitywatch"
 
 brew "spaceship"
 brew "git"
