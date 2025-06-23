@@ -7,6 +7,7 @@ cask "ghostty"
 cask "dbeaver-community"
 cask "bruno"
 cask "docker"
+cask "cursor"
 
 cask "blender"
 cask "thunderbird"
