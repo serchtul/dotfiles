@@ -22,6 +22,7 @@ brew "mise"
 brew "jq"
 brew "ripgrep"
 brew "fd"
+brew "gemini-cli"
 
 brew "tfenv"
 brew "nmap"
