@@ -35,6 +35,7 @@ brew "pnpm"
 
 brew "mongosh"
 brew "ollama"
+brew "ffmpeg"
 
 brew "octave"
 brew "stockfish"
