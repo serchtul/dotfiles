@@ -5,7 +5,7 @@ tap "wpscanteam/tap"
 cask "ghostty"
 cask "dbeaver-community"
 cask "bruno"
-cask "docker"
+cask "docker-desktop"
 cask "cursor"
 
 cask "blender"
