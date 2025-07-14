@@ -1,7 +1,6 @@
 tap "cloudflare/cloudflare"
 tap "tursodatabase/tap"
 tap "wpscanteam/tap"
-tap "oven-sh/bun"
 
 cask "ghostty"
 cask "dbeaver-community"
@@ -30,7 +29,6 @@ brew "nmap"
 brew "neovim"
 brew "fnm"
 brew "node"
-brew "oven-sh/bun/bun"
 brew "pnpm"
 
 brew "mongosh"
