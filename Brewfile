@@ -27,9 +27,6 @@ brew "tfenv"
 brew "nmap"
 
 brew "neovim"
-brew "fnm"
-brew "node"
-brew "pnpm"
 
 brew "mongosh"
 brew "ollama"

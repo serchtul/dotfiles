@@ -1,8 +1,9 @@
 [tools]
 bun = "latest"
+node = "22"
 uv = "latest"
 
 [settings]
-idiomatic_version_file_enable_tools = []
-experimental=true
+idiomatic_version_file_enable_tools = ["node"]
+experimental = true
 python.uv_venv_auto = true
