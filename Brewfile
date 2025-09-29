@@ -9,6 +9,7 @@ cask "docker-desktop"
 cask "cursor"
 
 cask "blender"
+cask "ea"
 cask "thunderbird"
 cask "anki"
 cask "activitywatch"
