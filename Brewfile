@@ -7,6 +7,7 @@ cask "dbeaver-community"
 cask "bruno"
 cask "docker-desktop"
 cask "cursor"
+cask "altair-graphql-client"
 
 cask "blender"
 cask "ea"
