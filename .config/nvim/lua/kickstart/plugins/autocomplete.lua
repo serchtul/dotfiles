@@ -1,8 +1,9 @@
 return {
   { -- Autocompletion
     'saghen/blink.cmp',
+    build = 'cargo +nightly build --release',
     event = 'VimEnter',
-    version = '1.*',
+    version = '2.*',
     dependencies = {
       -- Snippet Engine
       {
@@ -90,3 +91,5 @@ return {
     },
   },
 }
+
+-- vim: ts=2 sts=2 sw=2 et
