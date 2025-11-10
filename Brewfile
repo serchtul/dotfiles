@@ -35,6 +35,7 @@ brew "ffmpeg"
 
 brew "octave"
 brew "stockfish"
+brew "ykman"
 
 brew "tursodatabase/tap/turso"
 brew "wpscanteam/tap/wpscan"
