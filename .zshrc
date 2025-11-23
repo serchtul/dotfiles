@@ -70,3 +70,6 @@ function undotfiles() {
   unset GIT_WORK_TREE
 }
 
+
+# Added by Antigravity
+export PATH="/Users/sgarcia/.antigravity/antigravity/bin:$PATH"
