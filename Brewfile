@@ -18,7 +18,7 @@ cask "thunderbird"
 cask "anki"
 cask "activitywatch"
 
-brew "spaceship"
+brew "starship"
 brew "git"
 brew "git-lfs"
 brew "jj"
@@ -29,7 +29,6 @@ brew "ripgrep"
 brew "fd"
 brew "gemini-cli"
 
-brew "tfenv"
 brew "nmap"
 
 brew "neovim"
