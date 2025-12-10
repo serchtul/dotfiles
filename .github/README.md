@@ -8,7 +8,7 @@ As you may notice from the files, the following software is required:
 - zsh (with [oh-my-zsh](https://ohmyz.sh/))
 - [Homebrew](https://brew.sh/)
 
-These files are tracked locally using a **bare git repository**, so I don't have to turn my whole home directory into a repo. I took inspiration from this [article by Greg Owen](https://stegosaurusdormant.com/bare-git-repo), so it's worth a read if you want more context.
+These files are tracked locally using a **bare git repository**, so I don't have to turn my whole home directory into a repo (or create symlinks everywhere with [stow](https://www.gnu.org/software/stow/)). I took inspiration from this [article by Greg Owen](https://stegosaurusdormant.com/bare-git-repo), so it's worth a read if you want more context.
 
 ## Setup
 
