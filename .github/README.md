@@ -39,9 +39,9 @@ rsync --recursive --verbose --exclude '.git' dotfiles-tmp/ $HOME/
 rm -rf dotfiles-tmp
 ```
 
-## Adding and Committing Changes
+## Adding and Committing Changes from your Machine
 
-The `.zshrc` file includes two simple functions (`dotfiles`, `undotfiles`) to set up the correct git directory and working tree. This allows us to work with the bare repo with our usual git commands (and aliases).
+The `.zshrc` file includes two simple functions (`dotfiles`, `undotfiles`) that set up the correct git directory and working tree. This allows us to work with the bare repo using your usual git commands (and/or aliases).
 
 After setting up your dotfiles bare repo, you can commit changes to your dotfiles as follows:
 
@@ -51,17 +51,17 @@ After setting up your dotfiles bare repo, you can commit changes to your dotfile
 dotfiles
 ```
 
-**Note:** This assumes you are not using neither the `GIT_DIR` nor the `GIT_WORK_TREE` environment variables. Calling this function will override both of them.
+**Note:** This assumes you are not using neither the `GIT_DIR` nor the `GIT_WORK_TREE` environment variables for any other purpose. Calling this function will override both of them.
 
 2. Do all relevant `git`-ing related to your dotfiles, for example:
 
 ```bash
-git add -u # Update all tracked files
+git add -u # -u Updates all *tracked* files only
 git commit -m "a commit message"
 git push
 ```
 
-**Important:** Don't use `git add .`, this will add **all the files** in your home directory to the staging area!
+**Important:** Don't use `git add .`, this will add **all the files** in your home directory (instead of only the tracked ones) to the staging area!
 
 3. Revert git's config to its usual defaults
 
