@@ -1,5 +1,7 @@
 [tools]
 bun = "latest"
+clojure = "latest"
+lein = "latest"
 node = "lts"
 pnpm = "latest"
 uv = "latest"
@@ -8,3 +10,6 @@ uv = "latest"
 idiomatic_version_file_enable_tools = ["node"]
 experimental = true
 python.uv_venv_auto = true
+
+[plugins]
+lein = "https://codeberg.org/malice/asdf-lein.git"
