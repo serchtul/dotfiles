@@ -58,6 +58,15 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- Avoids screwing up buffer navigation and buffer search when terms are auto-created (e.g.: by Conjure)
+vim.api.nvim_create_autocmd('TermOpen', {
+  desc = 'Make terminal buffers unlisted',
+  group = vim.api.nvim_create_augroup('unlist-terminal-buffers', { clear = false }),
+  callback = function()
+    vim.bo.buflisted = false
+  end,
+})
+
 -- [[ Install `lazy.nvim` plugin manager ]]
 require 'lazy-bootstrap'
 
