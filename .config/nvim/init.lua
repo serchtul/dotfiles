@@ -24,8 +24,7 @@ See https://github.com/nvim-lua/kickstart.nvim for more information.
 
 (P.S. I left the ASCII art because I thought it was kinda sick.)
 
-TODO: Some pending reading items from the original kickstart file
-
+NOTE: Some interesting reading items from the original kickstart file
 - :Tutor
 - https://learnxinyminutes.com/docs/lua/
 - :help lua-guide (or HTML version): https://neovim.io/doc/user/lua-guide.html
@@ -35,7 +34,6 @@ TODO: Some pending reading items from the original kickstart file
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ','
 
--- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
@@ -47,9 +45,7 @@ require 'keymaps'
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
--- Highlight when yanking (copying) text
---  Try it with `yap` in normal mode
---  See `:help vim.highlight.on_yank()`
+-- Highlight when yanking text
 vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
   group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
