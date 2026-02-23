@@ -17,6 +17,7 @@ cask "ea"
 cask "thunderbird"
 cask "anki"
 cask "activitywatch"
+cask "claude-code"
 
 brew "starship"
 brew "git"
