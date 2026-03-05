@@ -11,7 +11,7 @@ return {
   },
   cmd = 'Neotree',
   keys = {
-    { '<leader>ng', ':Neotree reveal float git_status<CR>', desc = '[N]eoTree Show [G]it Status', silent = true },
+    { '<leader>nd', ':Neotree reveal float git_status<CR>', desc = '[N]eoTree Show Git [D]iff (Status)', silent = true },
     { '<leader>n<leader>', ':Neotree reveal float buffers<CR>', desc = '[N]eoTree Show Buffer Files', silent = true },
     { '<leader>nn', ':Neotree reveal float<CR>', desc = 'NeoTree reveal', silent = true },
     { '\\', ':Neotree reveal float<CR>', desc = 'NeoTree reveal', silent = true },
