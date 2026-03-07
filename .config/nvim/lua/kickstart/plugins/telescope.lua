@@ -110,6 +110,15 @@ return {
       vim.keymap.set('n', '<leader>sn', function()
         builtin.find_files { cwd = vim.fn.stdpath 'config' }
       end, { desc = '[S]earch [N]eovim files' })
+
+      -- Avoids screwing up buffer navigation and buffer search when terms are auto-created (e.g.: by Conjure)
+      vim.api.nvim_create_autocmd('TermOpen', {
+        desc = 'Make terminal buffers unlisted',
+        group = vim.api.nvim_create_augroup('unlist-terminal-buffers', { clear = false }),
+        callback = function()
+          vim.bo.buflisted = false
+        end,
+      })
     end,
   },
 }
