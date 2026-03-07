@@ -57,6 +57,12 @@ return {
           find_files = {
             hidden = true, -- TODO: Make sure .git files don't appear here
           },
+          buffers = {
+            sort_lastused = true,
+          },
+          colorscheme = {
+            enable_preview = true,
+          },
         },
         extensions = {
           ['ui-select'] = {
