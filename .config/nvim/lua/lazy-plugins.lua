@@ -25,7 +25,7 @@ require('lazy').setup({
   -- Custom plugins
   require 'plugins.conjure',
   require 'plugins.markdown',
-  require 'plugins.autopairs',
+  require 'plugins.s-exp',
   require 'plugins.git-blame',
   require 'plugins.harpoon',
 }, {
