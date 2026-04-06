@@ -10,3 +10,6 @@ error_symbol = '[➜](bold red)'
 
 [ruby]
 detect_variables = []
+
+[gcloud]
+disabled = true
