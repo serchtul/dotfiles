@@ -1,10 +1,14 @@
 return {
   { -- Autocompletion
     'saghen/blink.cmp',
-    build = 'cargo +nightly build --release',
+    build = function()
+      -- build the fuzzy matcher, wait up to 60 seconds
+      require('blink.cmp').build():wait(60000)
+    end,
     event = 'VimEnter',
     version = '2.*',
     dependencies = {
+      { 'saghen/blink.lib' },
       -- Snippet Engine
       {
         'L3MON4D3/LuaSnip',
