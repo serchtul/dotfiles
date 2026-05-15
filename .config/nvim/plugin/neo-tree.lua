@@ -8,14 +8,24 @@ if vim.g.have_nerd_font then
 end
 vim.pack.add(plugins)
 
+local function enable_line_numbers()
+  vim.wo.number = true
+  vim.wo.relativenumber = true
+end
+
 require('neo-tree').setup {
   filesystem = {
-    hijack_netrw_behavior = 'open_current',
+    hijack_netrw_behavior = 'disabled',
     window = {
       mappings = {
         ['\\'] = 'close_window',
       },
     },
+  },
+  event_handlers = {
+    { event = 'neo_tree_buffer_enter', handler = enable_line_numbers },
+    { event = 'neo_tree_window_after_open', handler = enable_line_numbers },
+    { event = 'neo_tree_popup_buffer_enter', handler = enable_line_numbers },
   },
 }
 
