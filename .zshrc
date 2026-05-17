@@ -25,6 +25,8 @@ fi
 # Aliases
 #
 
+alias n="nvim ."
+
 # These make git operations on dotfiles' bare repo easier
 function dotfiles() {
   export GIT_DIR="$HOME/dotfiles/"
