@@ -25,6 +25,6 @@ require('blink.cmp').setup {
     },
   },
   snippets = { preset = 'luasnip' },
-  fuzzy = { implementation = 'prefer_rust_with_warning' },
+  fuzzy = { implementation = 'rust' },
   signature = { enabled = true },
 }

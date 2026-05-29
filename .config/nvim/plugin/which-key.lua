@@ -39,7 +39,7 @@ require('which-key').setup {
     { '<leader>s', group = '[S]earch' },
     { '<leader>t', group = '[T]oggle' },
     { '<leader>g', group = '[G]it Hunk', mode = { 'n', 'v' } },
-    { '<leader>a', group = '[H]arpoon' },
+    { '<leader>h', group = '[H]arpoon' },
     { '<leader>n', group = '[N]eotree' },
   },
 }

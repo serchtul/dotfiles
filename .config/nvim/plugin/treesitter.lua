@@ -17,7 +17,6 @@ local parsers = {
   'vim',
   'vimdoc',
 }
-
 require('nvim-treesitter').install(parsers)
 
 ---@param buf integer

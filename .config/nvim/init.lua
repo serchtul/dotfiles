@@ -15,14 +15,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
-vim.api.nvim_create_autocmd('TermOpen', {
-  desc = 'Make terminal buffers unlisted',
-  group = vim.api.nvim_create_augroup('unlist-terminal-buffers', { clear = false }),
-  callback = function()
-    vim.bo.buflisted = false
-  end,
-})
-
 local function run_build(name, cmd, cwd)
   local result = vim.system(cmd, { cwd = cwd }):wait()
   if result.code ~= 0 then
@@ -51,11 +43,6 @@ vim.api.nvim_create_autocmd('PackChanged', {
         vim.cmd.packadd 'nvim-treesitter'
       end
       vim.cmd 'TSUpdate'
-    elseif name == 'blink.cmp' then
-      local ok, blink = pcall(require, 'blink.cmp')
-      if ok and blink.build then
-        blink.build():wait(60000)
-      end
     end
   end,
 })
