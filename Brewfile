@@ -17,6 +17,7 @@ cask "ea"
 cask "thunderbird"
 cask "anki"
 cask "activitywatch"
+cask "claude"
 cask "claude-code"
 
 brew "starship"
@@ -34,6 +35,8 @@ brew "gemini-cli"
 brew "nmap"
 
 brew "neovim"
+brew "tree-sitter-cli"
+brew "luajit"
 
 brew "mongosh"
 brew "ollama"
