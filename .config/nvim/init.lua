@@ -1,3 +1,10 @@
+--[[
+
+This config file used Kickstart.nvim as starting point (it only vaguely resembles it at this point.)
+See https://github.com/nvim-lua/kickstart.nvim for more information.
+
+--]]
+
 vim.loader.enable()
 
 vim.g.mapleader = ' '
