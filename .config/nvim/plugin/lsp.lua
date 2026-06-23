@@ -96,9 +96,19 @@ vim.api.nvim_create_autocmd('LspAttach', {
 local servers = {
   clojure_lsp = {},
   gopls = {},
-  pyright = {},
+  pyright = {
+    settings = {
+      python = {
+        analysis = {
+          venvPath = '.',
+          venv = '.venv',
+        },
+      },
+    },
+  },
   ts_ls = {},
   emmet_language_server = {},
+  astro = {},
   lua_ls = {
     settings = {
       Lua = {
@@ -106,6 +116,15 @@ local servers = {
           callSnippet = 'Replace',
         },
       },
+    },
+  },
+  tailwindcss = {
+    filetypes = {
+      'html',
+      'astro',
+      'typescript',
+      'react',
+      'svelte',
     },
   },
 }

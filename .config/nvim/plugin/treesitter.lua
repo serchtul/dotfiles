@@ -3,6 +3,7 @@ vim.pack.add {
 }
 
 local parsers = {
+  'astro',
   'bash',
   'c',
   'clojure',
