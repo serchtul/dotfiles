@@ -1,15 +1,10 @@
-tap "cloudflare/cloudflare"
 tap "tursodatabase/tap"
-tap "wpscanteam/tap"
-tap "slp/krun"
 
 cask "ghostty"
 cask "dbeaver-community"
 cask "bruno"
 cask "podman-desktop"
 cask "cursor"
-cask "antigravity"
-cask "altair-graphql-client"
 
 cask "cloudflare-warp"
 
@@ -20,6 +15,7 @@ cask "anki"
 cask "activitywatch"
 cask "claude"
 cask "claude-code"
+cask "typora"
 
 brew "starship"
 brew "git"
@@ -31,10 +27,7 @@ brew "jq"
 brew "ripgrep"
 brew "fd"
 brew "rlwrap"
-brew "gemini-cli"
 brew "podman"
-brew "slp/krun/krunkit"
-brew "podman-compose"
 brew "kubernetes-cli"
 
 brew "nmap"
@@ -52,6 +45,3 @@ brew "stockfish"
 brew "ykman"
 
 brew "tursodatabase/tap/turso"
-brew "wpscanteam/tap/wpscan"
-brew "cloudflare/cloudflare/cf-terraforming"
-
