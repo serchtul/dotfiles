@@ -1,5 +1,6 @@
 tap "tursodatabase/tap", trusted: true
 tap "libsql/sqld", trusted: true
+tap "libkrun/krun", trusted: true
 
 cask "ghostty"
 cask "dbeaver-community"
@@ -29,6 +30,9 @@ brew "ripgrep"
 brew "fd"
 brew "rlwrap"
 brew "podman"
+brew "podman-compose"
+brew "libkrun/krun/krunkit"
+brew "minikube"
 brew "kubernetes-cli"
 
 brew "nmap"
