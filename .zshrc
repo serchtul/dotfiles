@@ -41,3 +41,5 @@ function undotfiles() {
 
 # Added by Antigravity
 export PATH="/Users/sgarcia/.antigravity/antigravity/bin:$PATH"
+
+fpath+=~/.zfunc; autoload -Uz compinit; compinit
