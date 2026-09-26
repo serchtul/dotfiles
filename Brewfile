@@ -1,4 +1,5 @@
-tap "tursodatabase/tap"
+tap "tursodatabase/tap", trusted: true
+tap "libsql/sqld", trusted: true
 
 cask "ghostty"
 cask "dbeaver-community"
